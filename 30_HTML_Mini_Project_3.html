@@ -1,0 +1,261 @@
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+   <title>Title</title>
+    <title>UiBrains Technologies</title>
+   <script src="ex.js"></script>
+   <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            font-family: "Comic Sans MS",sans-serif;
+            
+            
+        }
+        /* header  , Footer */
+        header , footer{
+           background-color: purple;
+           background-image: url(graphic4.gif);
+           
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        small{
+            color: Lime;
+        }
+
+        /* Main Navigation */
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+       }
+       nav{
+           background-color: red;
+          overflow: hidden;
+      }
+      nav ul li{
+            float: left;
+        }
+        nav ul li a{
+            text-decoration: none; /* to remove underline */        
+            color: white;
+            padding: 14px 18px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        nav ul li a:hover{
+            background-color: blue;
+            color: white;
+            border-radius: 7px;
+        }
+        nav ul li a.active{
+            background-color: orange;
+            border-radius: 7px;
+        }
+
+       /* Sidebar Section */
+        aside ul{
+            list-style-type: none;
+            padding: 0;
+           margin: 0;
+           text-align: center;
+           height: 350px;
+           overflow-y: scroll; /* for scroll Bar*/
+        }
+        aside{
+            float: left;
+            min-width: 200px;
+        }
+        aside ul li a{
+            text-decoration: none;
+            color: #0A0812;
+            padding: 14px 25px;
+            display: block;
+        }
+        aside ul li a:hover{
+            background-color: #736D84;
+            color: white;
+        }
+
+        /* Main Content Section */
+        section{
+            margin-left: 200px;
+            border-left: 2px solid orange;
+            padding:10px;
+        }
+        details{
+            background-color: blue;
+            padding: 10px;
+            margin: 5px;
+            color: white;
+            border-radius: 50px;
+        }
+        summary{
+            outline: none;
+        }
+       article{
+            background-color: LightBlue ;
+           color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <!-- Main Header -->
+    <header>
+        <h1>Ui Brains Technologies</h1>
+        <p>The Smart way of Learning</p>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav>
+        <ul>
+            <li>
+               <a href="#" class="active">
+                  <i class="fa fa-home"></i> Home
+               </a>
+            </li>
+            <li>
+                <a href="#">
+                   <i class="fa fa-id-card"></i> About Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-envelope"></i>  Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-graduation-cap"></i>  Careers
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fa fa-book"></i>  Courses
+                </a>
+            </li>
+        </ul>
+    </nav>
+   
+
+    <!-- Sidebar Section -->
+    <aside>
+        <ul>
+            <li>
+                <a href="#">HTML</a>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+            </li>
+            <li>
+                <a href="#">JavaScript</a>
+            </li>
+            <li>
+                <a href="#">JQuey</a>
+            </li>
+            <li>
+                <a href="#">AJAX</a>
+            </li>
+            <li>
+                <a href="#">Bootstrap</a>
+            </li>
+            <li>
+                <a href="#">Angular JS</a>
+            </li>
+             <li>
+                <a href="#">React JS</a>
+            </li>
+             <li>
+                <a href="#">Node JS</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Section -->
+    <section>
+<div id="summary">
+    <button onclick="green()">Change to green</button>
+    <button onclick="red()">Change to Red</button>
+    <button onclick="orange()">change to Orange</button>
+    <button onclick="purple()">change to purple</button>
+</div>
+
+        <!-- HTML -->
+        <details>
+            <summary id="raj">HTML</summary>
+            <article>
+                <h1>HTML</h1>
+               <p>Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
+            </article>
+        </details>
+
+        <!-- CSS -->
+        <details>
+            <summary id="raj1">CSS</summary>
+            <article>
+                <h1>CSS</h1>
+                <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            </article>
+        </details>
+
+        <!-- JavaScript -->
+        <details>
+            <summary id="raj2">JavaScript</summary>
+            <article>
+                <h1>JavaScript</h1>
+                <p>JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
+            </article>
+        </details>
+
+        <!-- JQuery -->
+        <details>
+            <summary id="raj3">JQuery</summary>
+            <article>
+                <h1>JQuery</h1>
+                <p>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License.</p>
+            </article>
+        </details>
+
+        <!-- AJAX -->
+        <details>
+            <summary id="raj4">AJAX</summary>
+            <article>
+                <h1>AJAX</h1>
+                <p>AJAX stands for Asynchronous JavaScript and XML. AJAX is a new technique for creating better, faster, and more interactive web applications with the help of XML, HTML, CSS, and Java Script. Ajax uses XHTML for content, CSS for presentation, along with Document Object Model and JavaScript for dynamic content display.</p>
+            </article>
+        </details>
+
+        <!-- Bootstrap -->
+        <details>
+            <summary id="raj5">Bootstrap</summary>
+            <article>
+                <h1>Bootstrap</h1>
+                <p>Bootstrap is a free and open-source front-end library for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other ....</p>
+           </article>
+        </details>
+        <!-- Angular JS -->
+        <details>
+            <summary id="raj6">Angular JS</summary>
+            <article>
+                <h1>Angular JS</h1>
+                <p>AngularJS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.</p>
+            </article>
+        </details>
+    </section>
+
+
+    <!-- Main Footer -->
+    <footer>
+        <h2>Copyright &copy; 2018 , Ui Brains Technologies</h2>
+        <p>All Rights Reserved</p>
+        <small>Developed & Maintained by Raj</small>
+    </footer>
+<script src="ex.js"></script>
+ </body>
+</html> 
+</html>
